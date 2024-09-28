@@ -150,6 +150,35 @@ nav ul li a:hover::after {
         0 0 30px #FF6B35;
 }
 
+
+.btn-otro {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF6B35; /* Verde como color primario para botones */
+    color: #0d1b2a; /* Texto en azul oscuro */
+    text-decoration: none;
+    border: 2px solid #1c4121; /* Borde naranja vibrante */
+    border-radius: 5px 5px 20px 20px;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow:
+        0 0 5px #77C6ED,
+        0 0 10px #FF6B35,
+        0 0 10px #FF6B35; /* Sombra naranja */
+}
+
+.btn-otro:hover {
+    background-color: #072c28; /* Naranja vibrante en hover */
+    color: #77C6ED;
+    transform: scale(1.05);
+    border: 2px solid #77C6ED; /* Borde naranja vibrante */
+    box-shadow:
+        0 0 10px #FF6B35,
+        0 0 20px #77C6ED,
+        0 0 30px #FF6B35;
+}
+
 /* Secciones */
 .sobre-mi {
     padding: 0;
@@ -214,7 +243,7 @@ nav ul li a:hover::after {
     margin: 40px auto;
     /*max-width: 1200px;*/
     max-width: 1800px;
-    background: linear-gradient(180deg, #0d1b2a, #1c4121);
+    background: linear-gradient(90deg, #0d1b2a, #0d1b2a, #1c4121);
     /*background: linear-gradient(136deg, #0d1b2a, #1c4121);
     /*box-shadow: 0 0 20px #2ec4b64d; /* Sombra verde */
     border-radius: 5px 20px 20px 5px;
@@ -234,7 +263,7 @@ nav ul li a:hover::after {
 }
 
 .proyecto {
-    margin: 40px 40px 30px 40px;
+    margin: 100px 40px 30px 40px;
     /*margin-bottom: 30px NO UTILIZAR*/
     padding: 20px;
     background-color: #77c6ed50;
@@ -274,6 +303,39 @@ nav ul li a:hover::after {
     0 0 5px #FF6B35,
     0 0 10px #FF6B35,
     0 0 20px #2EC4B6;
+}
+
+/* Habilidades */
+.habilidades-cuadro {
+    background-color: #77c6ed50;
+    border-radius: 5px 5px 20px 20px;
+    box-shadow: 0 0 15px #77C6ED; /* Sombra verde */
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    justify-content: space-between; /* Espacio entre los elementos */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    padding: 50px;
+}
+
+.habilidades-cuadro-titulo{
+    font-size: 1.8em;
+    margin: 20px 0;
+    color: #ff6b35cc; /* Naranja para títulos */
+    text-shadow:
+    0 0 5px #2ec4b573,
+    0 0 10px #2ec4b579,
+    0 0 20px #2ec4b550;
+}
+
+.habilidades-cuadro li {
+    list-style: none;
+    font-size: 1.1em;
+    color: #F7F2EE;
+    /*OTRO COLOR*/
+    flex: 1; /* Hace que el párrafo ocupe todo el espacio restante */
+    font-family: 'Poppins', sans-serif; /* Fuente Poppins para el texto */
+    line-height: 1.6;
 }
 
 /* Formularios */
@@ -346,8 +408,14 @@ input::placeholder, textarea::placeholder {
     max-width: 1200px;
 }
 
+.redes-sociales ul {
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
 .redes-sociales a {
     color:  #2EC4B6;
+    
 }
 
 .redes-sociales a:hover{
@@ -355,7 +423,9 @@ input::placeholder, textarea::placeholder {
 }
 
 .redes-sociales li {
+    
     list-style: none;
+    
 }
 
 .colored-svg {
@@ -433,6 +503,10 @@ section {
     .habilidades ul li {
         flex: none;
         width: 80%;
+    }
+
+    .habilidades img {
+        opacity: 0;
     }
 
     .contenido-sobre-mi{
