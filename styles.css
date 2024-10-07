@@ -41,6 +41,14 @@ header {
     filter: drop-shadow(0 0 10px #2EC4B6); /* Sombra verde para el logo */
 }
 
+
+/*Animación de Carga*/
+.animated-logo {
+    animation: bounce 3s ease infinite;
+    display: inline-block;
+    margin-right: 20px;
+}
+
 .logo-texto h1 {
     margin: 0;
     font-weight: 700;
@@ -106,13 +114,26 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+
+
+.background {
+    background-image: url(./image\ 36.png);
+    /*Movimiento*/
+    background-position: 0 0;
+    background-repeat: repeat-x; /* La imagen se repetirá horizontalmente */
+    background-size: cover;
+    animation: mover-fondo 10s linear infinite; /* La animación durará 10 segundos y será infinita */
+    
+}
+
+
+
 #inicio {
     text-align: left;
     padding: 50px 20px;
     margin: 40px auto;
     max-width: 1200px;
     color: #b69d9d;
-
 }
 
 #presentacion {
@@ -218,7 +239,7 @@ nav ul li a:hover::after {
     /*OTRO COLOR*/
     flex: 1; /* Hace que el párrafo ocupe todo el espacio restante */
     font-family: 'Poppins', sans-serif; /* Fuente Poppins para el texto */
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.6;
 }
 
@@ -286,7 +307,7 @@ nav ul li a:hover::after {
     gap: 20px; /* Espacio entre la imagen y el texto */
 }
 
-.proyecto h3, .estudio h3 {
+.proyecto h3, .estudio h3, .proyecto-item h3 {
     font-size: 1.8em;
     margin: 20px 0;
     color: #ff6b35cc; /* Naranja para títulos */
@@ -296,7 +317,7 @@ nav ul li a:hover::after {
     0 0 20px #2ec4b550;
 }
 
-.proyecto img, .estudios-caso img {
+.proyecto img, .estudios-caso img, .proyecto-item img {
     /*flex-shrink: 0; NO UTILIZAR /* Evita que la imagen se reduzca */
     border-radius: 5px 20px 20px 5px;
     box-shadow:
@@ -336,6 +357,12 @@ nav ul li a:hover::after {
     flex: 1; /* Hace que el párrafo ocupe todo el espacio restante */
     font-family: 'Poppins', sans-serif; /* Fuente Poppins para el texto */
     line-height: 1.6;
+}
+
+.habilidades ul img {
+    box-shadow:         0 0 10px #FF6B35,
+    0 0 20px #FF6B35,
+    0 0 30px #77C6ED;
 }
 
 /* Formularios */
@@ -400,6 +427,7 @@ input::placeholder, textarea::placeholder {
   }
 
 #estudios-caso {
+    /*background-image: url(./Sparkle-PNG-Pic\ 1.png);*/
     text-align: center;
     padding: 50px 20px;
     margin: 40px auto;
@@ -407,6 +435,17 @@ input::placeholder, textarea::placeholder {
     /*OTRO COLOR*/
     max-width: 1200px;
 }
+
+.estudios-caso p{
+    font-size: 1.2em;
+}
+
+/*.estudios-caso p {
+        text-align: center;
+    padding: 50px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+}*/
 
 .redes-sociales ul {
     display: flex; /* Activa Flexbox */
@@ -435,6 +474,9 @@ input::placeholder, textarea::placeholder {
 .colored-svg:hover {
     filter: invert(57%) sepia(91%) saturate(2817%) hue-rotate(338deg) brightness(100%) contrast(96%);
 }
+
+
+
 /* Pie de página */
 footer {
     background-color: #0d1b2a;
@@ -449,6 +491,181 @@ footer p {
     margin: 0;
     font-size: 1em;
 }
+
+
+
+
+/*CARRUSEL SECCIÓN HABILIDADES*/
+.skills-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+    position: relative;
+    /*width: 100%;*/
+    margin: 0 auto;
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 100px 40px 30px 40px;
+    /*margin-bottom: 30px NO UTILIZAR*/
+    padding: 20px;
+    background-color: #77c6ed50;
+    border-radius: 5px 5px 20px 20px;
+    box-shadow: 0 0 15px #77C6ED; /* Sombra verde */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .skill-item {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .skill-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  /*.skill-item img:hover {
+    width: 200%;
+    height: auto;
+    margin-bottom: 1em;
+  }*/
+  
+  .carousel-btn {
+    background-color: #FF6B35;
+    color: #77C6ED;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow:         0 0 10px #FF6B35,
+    0 0 10px #FF6B35,
+    0 0 10px #77C6ED;
+  }
+  
+  .prev-btn {
+    left: 0;
+    border-radius: 20px 5px 5px 20px;
+  }
+  
+  .next-btn {
+    right: 0;
+    border-radius: 5px 20px 20px 5px;
+  }
+
+
+
+/*CARRUSEL SECCIÓN PROYECTOS*/
+.proyecto-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+    position: relative;
+    width: 100%;
+    margin: 60 auto;
+  }
+  
+  .carousel-container-proyecto {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 100px 40px 30px 40px;
+    /*margin-bottom: 30px NO UTILIZAR*/
+    padding: 20px;
+    background-color: #77c6ed50;
+    border-radius: 5px 5px 20px 20px;
+    box-shadow: 0 0 15px #77C6ED; /* Sombra verde */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .proyecto-item {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+  }
+
+  .proyecto-item p {
+    text-align: center;
+    font-size: 1.2em ;
+    padding: 0 200px;
+  }
+  
+  .proyecto-item img {
+    width: 20%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  /*.skill-item img:hover {
+    width: 200%;
+    height: auto;
+    margin-bottom: 1em;
+  }*/
+  
+  .btn-proyecto {
+    background-color: #FF6B35;
+    color: #77C6ED;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1.5em;
+    position: relative;
+    /*top: 100%;*/
+    transform: translateY(-20%);
+    box-shadow:         0 0 10px #FF6B35,
+    0 0 10px #FF6B35,
+    0 0 10px #77C6ED;
+  }
+
+  .btn-proyecto:hover {
+    background-color: #072c28; /* Naranja vibrante en hover */
+    color: #77C6ED;
+    transform: scale(1.2);
+    border: 2px solid #77C6ED; /* Borde naranja vibrante */
+    box-shadow:
+        0 0 10px #FF6B35,
+        0 0 20px #77C6ED,
+        0 0 30px #FF6B35;
+  }
+
+  .prev-proyecto {
+    left: 0;
+    border-radius: 20px 5px 5px 20px;
+  }
+  
+  .next-proyecto {
+    right: 0;
+    border-radius: 5px 20px 20px 5px;
+  }
+
+
+/*Animación logo*/
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Posición inicial */
+    }
+    50% {
+        transform: translateY(-20px); /* Mover hacia arriba en el medio de la animación */
+    }
+}
+
 
 /* Animaciones */
 @keyframes flicker {
@@ -476,6 +693,18 @@ section {
     }
 }
 
+
+/*Movimiento para la bola*/
+@keyframes mover-fondo {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -5700px 0; /* Ajusta la distancia del movimiento */
+    }
+}
+
+
 /* Responsividad */
 @media (max-width: 768px) {
     header {
@@ -486,13 +715,29 @@ section {
         margin: 0;
     }
 
+
+
     nav ul {
         flex-direction: column;
         align-items: center;
     }
 
     nav ul li {
-        margin: 10px 0;
+        font-size: xx-small;
+        margin: 5px 0;
+    }
+
+    .proyecto-item p {
+        padding: 0;
+        font-size: 0.8em;
+    }
+
+    .proyecto-item img {
+        width: 40%;
+    }
+
+    .contenido-sobre-mi p, .estudios-caso p {
+        font-size: 0.8em;
     }
 
     .habilidades ul {
@@ -503,10 +748,20 @@ section {
     .habilidades ul li {
         flex: none;
         width: 80%;
+        font-size: 1.0em;
+        padding: 5px auto;
     }
 
-    .habilidades img {
-        opacity: 0;
+
+
+    .habilidades ul img {
+        opacity: 100;
+        margin: 0;
+        padding: 0;
+        transform:rotate(90deg);
+        box-shadow:         0 0 10px #FF6B35,
+        0 0 20px #FF6B35,
+        0 0 30px #77C6ED;
     }
 
     .contenido-sobre-mi{
@@ -515,8 +770,10 @@ section {
     }
 
     .contenido-sobre-mi img , #foto-mia {
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+        width: 150px; /* Asegura que la imagen ocupe todo el ancho disponible */
+        height: 200px;
         margin-bottom: 20px; /* Añade espacio debajo de la imagen */
+        
     }
     
 
@@ -529,6 +786,7 @@ section {
         margin: 0 10px;
     }
 
+
     .btn {
         font-size: 1em;
         padding: 10px 20px;
@@ -538,3 +796,4 @@ section {
         font-size: 2em;
     }
 }
+
