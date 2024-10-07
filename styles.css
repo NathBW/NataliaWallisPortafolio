@@ -736,6 +736,29 @@ section {
         width: 40%;
     }
 
+    .proyecto-item h3 {
+        text-align: center;
+    }
+
+    .btn-proyecto {
+        transform: scale(60%);
+        margin: 0;
+    }
+
+    .btn-proyecto:hover {
+        transform: scale(70%);
+    }
+
+    .carousel-container-proyecto {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        margin: 0px;
+        /*margin-bottom: 30px NO UTILIZAR*/
+        padding: 20px;
+      }
+      
+
     .contenido-sobre-mi p, .estudios-caso p {
         font-size: 0.8em;
     }
