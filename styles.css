@@ -743,19 +743,28 @@ section {
     .btn-proyecto {
         transform: scale(60%);
         margin: 0;
+
     }
 
     .btn-proyecto:hover {
         transform: scale(70%);
     }
 
+    .prev-proyecto {
+        left: -30px;
+      }
+      
+      .next-proyecto {
+        right: -30px;
+      }
+
     .carousel-container-proyecto {
         display: flex;
         overflow: hidden;
         width: 100%;
-        margin: 0px;
+        margin: 0 -40px;
         /*margin-bottom: 30px NO UTILIZAR*/
-        padding: 20px;
+        padding: 5px;
       }
       
 
