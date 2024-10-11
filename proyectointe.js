@@ -12,6 +12,12 @@ function updateCarouselProyecto(indexproyecto) {
     });
 }
 
+if (currentIndexProyecto === 0) {
+    prevBtnProyecto.disabled = true; // Desactiva el botón de "Anterior" si estamos en el primer proyecto
+} else {
+    prevBtnProyecto.disabled = false; // Activa el botón si no estamos en el primer proyecto
+}
+
 // Evento para el botón "Siguiente"
 nextBtnProyecto.addEventListener('click', () => {
     if (currentIndexProyecto < proyectoItems.length - 1) {
