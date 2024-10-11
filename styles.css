@@ -540,7 +540,7 @@ footer p {
     margin-bottom: 1em;
   }*/
   
-  .carousel-btn {
+  .carousel- {
     background-color: #FF6B35;
     color: #77C6ED;
     border: none;
@@ -565,7 +565,10 @@ footer p {
     border-radius: 5px 20px 20px 5px;
   }
 
-
+.btn-proyecto:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
 
 /*CARRUSEL SECCIÓN PROYECTOS*/
 .proyecto-carousel {
