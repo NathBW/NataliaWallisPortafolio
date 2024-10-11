@@ -10,13 +10,15 @@ function updateCarouselProyecto(indexproyecto) {
         // Desplazamos cada proyecto en base al índice
         itemproyecto.style.transform = `translateX(${(p - indexproyecto) * 100}%)`;
     });
+
+    if (currentIndexProyecto === 0) {
+    prevBtnProyecto.disabled = true; // Desactiva el botón de "Anterior" si estamos en el primer proyecto
+    } else {
+    prevBtnProyecto.disabled = false; // Activa el botón si no estamos en el primer proyecto
+    }
 }
 
-if (currentIndexProyecto === 0) {
-    prevBtnProyecto.disabled = true; // Desactiva el botón de "Anterior" si estamos en el primer proyecto
-} else {
-    prevBtnProyecto.disabled = false; // Activa el botón si no estamos en el primer proyecto
-}
+
 
 // Evento para el botón "Siguiente"
 nextBtnProyecto.addEventListener('click', () => {
