@@ -13,7 +13,7 @@ function updateCarouselProyecto(indexproyecto) {
 
     if (currentIndexProyecto === 0) {
     prevBtnProyecto.disabled = true; // Desactiva el botón de "Anterior" si estamos en el primer proyecto
-    } else {
+    } else if (currentIndexProyecto !== 0){
     prevBtnProyecto.disabled = false; // Activa el botón si no estamos en el primer proyecto
     }
 }
