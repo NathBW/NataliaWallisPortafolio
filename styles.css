@@ -565,10 +565,6 @@ footer p {
     border-radius: 5px 20px 20px 5px;
   }
 
-.btn-proyecto:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
 
 /*CARRUSEL SECCIÓN PROYECTOS*/
 .proyecto-carousel {
@@ -657,6 +653,10 @@ footer p {
     border-radius: 5px 20px 20px 5px;
   }
 
+.prev-proyecto:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
 
 /*Animación logo*/
 
