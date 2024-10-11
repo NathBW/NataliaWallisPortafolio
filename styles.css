@@ -566,7 +566,7 @@ footer p {
   }
 
 .btn-proyecto:disabled {
-    opacity: 0;
+    opacity: 0.5;
     cursor: not-allowed;
 }
 
