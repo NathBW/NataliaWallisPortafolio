@@ -795,15 +795,6 @@ section {
         padding: 5px auto;
     }
 
-    #imagen-seguidora {
-        position: absolute;
-        pointer-events:none; /* Esto evita que la imagen interfiera con la interacción del cursor */
-        height: 0;
-        z-index: none; /* Asegura que esté por encima de otros elementos */
-        transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
-        opacity: 0;
-    }
-
     .habilidades ul img {
         opacity: 100;
         margin: 0;
@@ -824,6 +815,10 @@ section {
         height: 200px;
         margin-bottom: 20px; /* Añade espacio debajo de la imagen */
         
+    }
+
+    #imagen-seguidora {
+        display: none; /* Oculta la imagen en pantallas pequeñas */
     }
     
 
