@@ -815,12 +815,7 @@ section {
         height: 200px;
         margin-bottom: 20px; /* Añade espacio debajo de la imagen */
         
-    }
-
-    #imagen-seguidora {
-        display: none; /* Oculta la imagen en pantallas pequeñas */
-    }
-    
+    }    
 
     .proyecto-contenido {
         flex-direction: column;
@@ -839,5 +834,11 @@ section {
 
     #presentacion {
         font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #imagen-seguidora {
+        display: none; /* Oculta la imagen en pantallas pequeñas */
     }
 }
