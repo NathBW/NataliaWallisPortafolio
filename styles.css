@@ -529,13 +529,14 @@ filter: invert(81%) sepia(20%) saturate(3586%) hue-rotate(158deg) brightness(96%
   .study-itemD img {
     width: 50px; /* Ajusta el tamaño de los logos */
     height: auto;
-    filter: brightness(0) saturate(100%) invert(29%) sepia(57%) saturate(2211%) hue-rotate(83deg) brightness(91%) contrast(91%);
+    /*filter: brightness(0) saturate(100%) invert(29%) sepia(57%) saturate(2211%) hue-rotate(83deg) brightness(91%) contrast(91%);*/
     transition: filter 0.3s ease;
     margin-bottom: 10px; /* Espacio entre el logo y el nombre de la herramienta */
   }
 
   .study-itemD img:hover {
-    filter: invert(81%) sepia(20%) saturate(3586%) hue-rotate(158deg) brightness(96%) contrast(89%);
+    /*filter: invert(81%) sepia(20%) saturate(3586%) hue-rotate(158deg) brightness(96%) contrast(89%);*/
+    filter: brightness(0) saturate(100%) invert(29%) sepia(57%) saturate(2211%) hue-rotate(83deg) brightness(91%) contrast(91%);
     }
   
   .study-itemD p {
