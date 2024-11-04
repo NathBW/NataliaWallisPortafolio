@@ -34,3 +34,10 @@ nextBtn.addEventListener('click', () => {
 
 // Inicializar el carrusel
 showSkill(currentIndex);
+
+
+
+function navigateAndDownload() {
+    // Primero redirige a LinkedIn
+    window.location.href = 'https://www.linkedin.com/in/natalia-berm%C3%BAdez-wallis-5b73aa26b/';
+}
