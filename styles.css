@@ -325,8 +325,16 @@ nav ul li a:hover::after {
     0 0 20px #2ec4b550;
 }
 
-.proyecto img, .estudios-caso img, .proyecto-item img {
+.proyecto img, /*.estudios-caso img,*/ .proyecto-item img {
     /*flex-shrink: 0; NO UTILIZAR /* Evita que la imagen se reduzca */
+    border-radius: 5px 20px 20px 5px;
+    box-shadow:
+    0 0 5px #FF6B35,
+    0 0 10px #FF6B35,
+    0 0 20px #2EC4B6;
+}
+
+.estudio-img{
     border-radius: 5px 20px 20px 5px;
     box-shadow:
     0 0 5px #FF6B35,
@@ -447,6 +455,93 @@ input::placeholder, textarea::placeholder {
 .estudios-caso p{
     font-size: 1.2em;
 }
+
+
+.study-section {
+  background-color: #77c6ed50;
+  margin: auto 400px;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  justify-content: flex-start;
+  border-radius: 5px 5px 20px 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  animation: mover-item 20s linear infinite;
+  /* Ajusta el ancho del contenedor para asegurarte de que los elementos se muevan correctamente */
+  width: calc(10% * 8); /* Suponiendo que tienes 8 elementos */
+}
+
+.study-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  text-align: center;
+  /* Espacio entre los ítems */
+  margin-right: 40px;
+}
+
+.study-item img {
+  width: 50px;
+  height: auto;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(57%) saturate(2211%) hue-rotate(83deg) brightness(91%) contrast(91%);
+  transition: filter 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.study-item img:hover {
+filter: invert(81%) sepia(20%) saturate(3586%) hue-rotate(158deg) brightness(96%) contrast(89%);
+}
+
+.study-item p {
+  font-size: 14px;
+  color: #F7F2EE;
+}
+
+/*SEGUNDA FORMA*/
+.study-sectionD {
+    background-color: #77c6ed50;
+    margin: auto 400px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px; /* Espacio entre cada herramienta */
+    justify-content: center; /* Alinea las herramientas en el centro */
+    border-radius: 5px 5px 20px 20px;
+  }
+  
+  .study-itemD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px; /* Ajusta el ancho según lo necesites */
+    text-align: center;
+  }
+  
+  .study-itemD img {
+    width: 50px; /* Ajusta el tamaño de los logos */
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(29%) sepia(57%) saturate(2211%) hue-rotate(83deg) brightness(91%) contrast(91%);
+    transition: filter 0.3s ease;
+    margin-bottom: 10px; /* Espacio entre el logo y el nombre de la herramienta */
+  }
+
+  .study-itemD img:hover {
+    filter: invert(81%) sepia(20%) saturate(3586%) hue-rotate(158deg) brightness(96%) contrast(89%);
+    }
+  
+  .study-itemD p {
+    font-size: 14px; /* Tamaño del texto debajo de cada logo */
+    color: #F7F2EE; /* Color del texto */
+  }
 
 /*.estudios-caso p {
         text-align: center;
@@ -685,6 +780,12 @@ footer p {
     100% { opacity: 1; }
 }
 
+
+@keyframes mover-item {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-110%); }
+  }
+  
 .inicio::before {
     animation: flicker 3s infinite;
 }
@@ -826,11 +927,60 @@ section {
         margin: 0 10px;
     }
 
+    .study-section {
+        margin: auto 20px;
+        padding: 5px 0px;
+      }
+    
+      .study-item {
+        width: 60px;
+        margin-right: 10px;
+      }
+    
+      .study-item img {
+        width: 30px;
+        margin-bottom: 5px;
+      }
+    
+      .study-item p {
+        font-size: 10px;
+      }
+
+      .marquee-container {
+        animation: mover-item 5s linear infinite;
+      }
+
+    @keyframes mover-item {
+        0% { transform: translateX(30%); }
+        100% { transform: translateX(-20%); }
+    }
+      
+
 
     .btn {
         font-size: 1em;
         padding: 10px 20px;
     }
+
+
+    .study-sectionD {
+        margin: auto 20px;
+        padding: 5px 0px;
+      }
+    
+      .study-itemD {
+        width: 60px;
+        margin-right: 10px;
+      }
+    
+      .study-itemD img {
+        width: 30px;
+        margin-bottom: 5px;
+      }
+    
+      .study-itemD p {
+        font-size: 10px;
+      }
 
     #presentacion {
         font-size: 2em;
@@ -842,3 +992,127 @@ section {
         display: none; /* Oculta la imagen en pantallas pequeñas */
     }
 }
+
+
+/* Otras */
+@media (max-width: 1200px) {
+    .study-section {
+      margin: auto 200px;
+    }
+    
+    .study-item {
+      width: 80px;
+      margin-right: 15px;
+    }
+    
+    .study-item img {
+      width: 40px;
+    }
+
+
+    .study-sectionD {
+        margin: auto 200px;
+      }
+      
+      .study-itemD {
+        width: 80px;
+        margin-right: 15px;
+      }
+      
+      .study-itemD img {
+        width: 40px;
+      }
+    
+  }
+  
+  @media (max-width: 800px) {
+    .study-section {
+      margin: auto 100px;
+    }
+    
+    .study-item {
+      width: 60px;
+      margin-right: 10px;
+    }
+    
+    .study-item img {
+      width: 30px;
+    }
+
+
+
+
+    .study-sectionD {
+        margin: auto 100px;
+      }
+      
+      .study-itemD {
+        width: 60px;
+        margin-right: 10px;
+      }
+      
+      .study-itemD img {
+        width: 30px;
+      }
+  }
+  
+  @media (max-width: 600px) {
+    .study-section {
+      margin: auto 50px;
+    }
+    
+    .study-item {
+      width: 50px;
+      margin-right: 5px;
+    }
+    
+    .study-item img {
+      width: 25px;
+    }
+
+
+
+    .study-sectionD {
+        margin: auto 50px;
+      }
+      
+      .study-itemD {
+        width: 50px;
+        margin-right: 5px;
+      }
+      
+      .study-itemD img {
+        width: 25px;
+      }
+  }
+  
+  @media (max-width: 400px) {
+    .study-section {
+      margin: auto 10px;
+    }
+    
+    .study-item {
+      width: 40px;
+      margin-right: 2px;
+    }
+    
+    .study-item img {
+      width: 20px;
+    }
+
+
+
+
+    .study-sectionD {
+        margin: auto 10px;
+      }
+      
+      .study-itemD {
+        width: 40px;
+        margin-right: 2px;
+      }
+      
+      .study-itemD img {
+        width: 20px;
+      }
+  }
