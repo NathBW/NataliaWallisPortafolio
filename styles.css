@@ -1078,18 +1078,18 @@ section {
 
 
 
-    .study-sectionD {
-        margin: auto 0px;
-      }
-      
-      .study-itemD {
-        width: 50px;
-        margin-right: 5px;
-      }
-      
-      .study-itemD img {
-        width: 20px;
-      }
+  .study-sectionD {
+      margin: auto -10px;
+    }
+    
+    .study-itemD {
+      width: 50px;
+      margin-right: 5px;
+    }
+    
+    .study-itemD img {
+      width: 25px;
+    }
   }
   
   @media (max-width: 400px) {
