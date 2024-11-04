@@ -457,7 +457,7 @@ input::placeholder, textarea::placeholder {
 }
 
 
-.study-section {
+/*.study-section {
   background-color: #77c6ed50;
   margin: auto 400px;
   padding: 10px 0px;
@@ -476,8 +476,8 @@ input::placeholder, textarea::placeholder {
   gap: 0px;
   animation: mover-item 20s linear infinite;
   /* Ajusta el ancho del contenedor para asegurarte de que los elementos se muevan correctamente */
-  width: calc(10% * 8); /* Suponiendo que tienes 8 elementos */
-}
+ /* width: calc(10% * 8); /* Suponiendo que tienes 8 elementos */
+/*}
 
 .study-item {
   display: flex;
@@ -486,7 +486,7 @@ input::placeholder, textarea::placeholder {
   width: 100px;
   text-align: center;
   /* Espacio entre los ítems */
-  margin-right: 40px;
+/*  margin-right: 40px;
 }
 
 .study-item img {
@@ -509,7 +509,7 @@ filter: invert(81%) sepia(20%) saturate(3586%) hue-rotate(158deg) brightness(96%
 /*SEGUNDA FORMA*/
 .study-sectionD {
     background-color: #77c6ed50;
-    margin: auto 400px;
+    margin: auto 200px;
     padding: 10px 0px;
     display: flex;
     flex-direction: row;
@@ -932,7 +932,7 @@ section {
         margin: 0 10px;
     }
 
-    .study-section {
+/*    .study-section {
         margin: auto 20px;
         padding: 5px 0px;
       }
@@ -958,7 +958,7 @@ section {
     @keyframes mover-item {
         0% { transform: translateX(30%); }
         100% { transform: translateX(-20%); }
-    }
+    }*/
       
 
 
@@ -969,7 +969,7 @@ section {
 
 
     .study-sectionD {
-        margin: auto 20px;
+        margin: auto 10px;
         padding: 5px 0px;
       }
     
