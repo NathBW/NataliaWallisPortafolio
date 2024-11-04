@@ -1079,7 +1079,7 @@ section {
 
 
     .study-sectionD {
-        margin: auto 50px;
+        margin: auto 0px;
       }
       
       .study-itemD {
@@ -1088,7 +1088,7 @@ section {
       }
       
       .study-itemD img {
-        width: 25px;
+        width: 20px;
       }
   }
   
@@ -1110,7 +1110,7 @@ section {
 
 
     .study-sectionD {
-        margin: auto 10px;
+        margin: auto 0px;
       }
       
       .study-itemD {
@@ -1119,6 +1119,6 @@ section {
       }
       
       .study-itemD img {
-        width: 20px;
+        width: 10px;
       }
   }
