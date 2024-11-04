@@ -970,7 +970,7 @@ section {
 
 
     .study-sectionD {
-        margin: auto 10px;
+        margin: auto 0px;
         padding: 5px 0px;
       }
     
@@ -1003,7 +1003,7 @@ section {
 /* Otras */
 @media (max-width: 1200px) {
     .study-section {
-      margin: auto 200px;
+      margin: auto 100px;
     }
     
     .study-item {
@@ -1033,7 +1033,7 @@ section {
   
   @media (max-width: 800px) {
     .study-section {
-      margin: auto 100px;
+      margin: auto 50px;
     }
     
     .study-item {
@@ -1064,7 +1064,7 @@ section {
   
   @media (max-width: 600px) {
     .study-section {
-      margin: auto 50px;
+      margin: auto 20px;
     }
     
     .study-item {
@@ -1094,7 +1094,7 @@ section {
   
   @media (max-width: 400px) {
     .study-section {
-      margin: auto 10px;
+      margin: auto 0px;
     }
     
     .study-item {
