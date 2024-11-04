@@ -923,6 +923,11 @@ section {
         align-items: flex-start;
     }
 
+    .estudio-img{
+        width: 250px;
+        height: 150px;
+    }
+
     .proyecto {
         margin: 0 10px;
     }
