@@ -13,8 +13,8 @@
     <!-- Encabezado con navegación -->
     <header>
         <div class="logo">
-            <a href="#inicio"><img src="dasd.png" alt="Logo de Natalia Bermúdez Wallis" class="logo-img animated-logo"></a>
-            <h1>Mi Portafolio</h1>
+            <a href="#inicio"></a>
+            <h1>Natalia Wallis</h1>
         </div>
 
        <!-- <div class="logo">
@@ -22,10 +22,11 @@
             <h1>MI PORTAFOLIO</h1>
         </div> -->
         <nav>
+            <!-- Botón hamburguesa --> <div class="hamburger" onclick="toggleMenu()"> ☰ </div>
+
             <ul class="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -34,11 +35,11 @@
 
     <!-- Sección de inicio -->
     <div class="background">
-    <section id="inicio" class="inicio">
+    <!--<section id="inicio" class="inicio">-->
         <!--<h2>Bienvenido a mi Portafolio</h2> -->
-        <h1 id="presentacion">Soy una <strong>Desarrolladora de Videojuegos y Diseñadora UX/UI con enfoque en soluciones accesibles y de alto rendimiento.</strong></h1>
+        <!--<h1 id="presentacion">Soy una <strong>Desarrolladora de Videojuegos y Diseñadora UX/UI con enfoque en soluciones accesibles y de alto rendimiento.</strong></h1>
         <a href="#proyectos" class="btn">Ver Proyectos</a>
-    </section>
+    </section>-->
     </div>
 
     <!-- Sección Sobre mí -->
@@ -46,15 +47,15 @@
     <section id="sobre-mi" class="sobre-mi">
         <h2>Sobre Mí </h2>
         <div class="contenido-sobre-mi">
-            <img id="foto-mia" class="sobre-mi" src="img/01a.jpg" alt="Foto De Natalia Bermúdez Wallis." width="250px" height="300px">
+            <img id="foto-mia" class="sobre-mi" src="img/foto.png" alt="Foto De Natalia Bermúdez Wallis." width="30%" height="30%">
             <p>
-                Soy una desarrolladora de videojuegos con experiencia en diseño UX/UI. Mi enfoque principal es crear experiencias interactivas accesibles y 
-                funcionales para todos los usuarios. <br>
-                <br>
-                Mis habilidades técnicas incluyen desarrollo en lenguajes como <strong> C#, C++, JavaScript, HTML, CSS,</strong> y uso de tecnologías como <strong> Unity, Blender, y Android Studio.</strong>
+                Diseñadora interactiva con enfoque en UX/UI y desarrollo frontend. Me interesa crear experiencias digitales claras, funcionales y centradas en las personas.
+                <br><br>
+                Disfruto trabajar de forma colaborativa, iterativa y con atención al detalle, buscando siempre generar valor real tanto para los usuarios como para los proyectos.
+                Trabajo el <strong>UI</strong> desde sistemas de diseño, realizo <strong>UX research</strong> y pruebas con usuarios, y tengo experiencia en desarrollo <strong>Front-end</strong>, lo que me permite diseñar soluciones viables y llevarlas hasta su implementación.
                 <br> <br>
-                <a href="CV.pdf" onclick="navigateAndDownload()" download="CV-Natalia-Bermúdez.pdf" class="btn-otro">Curriculum</a> 
-
+                <a href="CV_WallisNatalia_ES.pdf"  download="CV-Natalia-Bermúdez.pdf" class="btn-otro">Descargar CV</a> 
+                <!--onclick="navigateAndDownload()"-->
 
         </div>
 
@@ -63,8 +64,8 @@
     
     <!-- Sección de Proyectos Destacados -->
     <section id="proyectos" class="proyectos">
-        <h2>Proyectos Destacados</h2>
-        <div class="proyecto-carousel">
+        <h2>Páginas Webs</h2>
+       <!-- <div class="proyecto-carousel">
             <button class="btn-proyecto prev-proyecto">◀</button>
 
             <div class="carousel-container-proyecto">
@@ -130,49 +131,156 @@
                     <h3></h3>
                     <p></p>
                 </div>
-                <!-- Puedes añadir más habilidades aquí -->
             </div>
 
             <button class="btn-proyecto next-proyecto">▶</button>
-        </div>
+        </div>-->
 
 
 <!--SEGUNDA FORMA DE VER LOS PROYECTOS-->
-    <!--    <div class="proyecto">
-            <h3>ETHER</h3>
+
+        <!-- TOBÍAS BPA -->
+        <div class="proyecto">
+            <h3>TOBÍAS BPA</h3>
+            <h4><strong>Cliente:</strong> Segetis S.A.S.</h4>
+            <div class="study-sectionDs">
+                <div class="study-itemDs">
+                    <img src="Svg/enterprise-design-thinking-02-svgrepo-com.svg" alt=" DesignThinking Logo">
+                  <p>Design Thinking</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/ic_baseline-wordpress.svg" alt="WordPress Logo">
+                  <p>WordPress</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/mdi_react.svg" alt="React Logo">
+                  <p>React</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/Figma.svg" alt="Figma Logo">
+                  <p>Figma</p>
+                </div>
+            </div>
             <div class="proyecto-contenido">
-                <img src="img/E_So9G.png" alt="Imagen del Proyecto ETHER" width="200px" height="150px">
-                <p>Un juego de aventuras que explora mundos dimensionales para unir la naturaleza. Utilicé Unity y 
-                    fui la encargada de la creación de las interacciones y mecánicas del videojuego 3D. 
-                    También realicé la integración de animaciones y el ambiente sonoro. <br>
-                    <br> <a href="https://nataliabermudezw.itch.io/ether" class="btn">Ver Proyecto</a>
+                <img src="img/TOBIAS.png" alt="Imagen del Proyecto TOBIAS-BPA" width="50%" height="50%">
+                <p>Diseño y desarrollo de un sitio web desde cero para TOBÍAS BPA, aplicación móvil y aula virtual orientada a capacitar actores del sector agropecuario en el uso seguro de plaguicidas, Buenas Prácticas Agrícolas y cuidado de la salud y el ambiente.
+                    
+                    <br><br>El objetivo fue generar interés, confianza y motivar la descarga de la app, facilitando el acceso a la capacitación digital en contextos rurales y técnicos. El sistema se implementó con WordPress, React y un UI Kit personalizado, mejorando la experiencia de usuario y la comunicación del proyecto.
+                <br><br>
+                    
+                    <a href="https://www.behance.net/gallery/242893021/TOBIAS-BPA" target="_blank" class="btn">Ver Proyecto</a>
+                    <a href="https://tobiasbpa.co/" target="_blank" class="enlace">Ver Sitio Web</a>
                 </p>
             </div>
-
-
         </div>
+
+        <!-- SEGETIS S.A.S. -->
         <div class="proyecto">
-            <h3>BOYD</h3>
+            <h3>SEGETIS S.A.S</h3>
+            <h4><strong>Cliente:</strong> Segetis S.A.S.</h4>
+            <div class="study-sectionDs">
+                <div class="study-itemDs">
+                    <img src="Svg/enterprise-design-thinking-02-svgrepo-com.svg" alt=" DesignThinking Logo">
+                  <p>Design Thinking</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/ic_baseline-wordpress.svg" alt="WordPress Logo">
+                  <p>WordPress</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/Figma.svg" alt="Figma Logo">
+                  <p>Figma</p>
+                </div>
+            </div>
             <div class="proyecto-contenido">
-                <img src="img/_vWG8p 1.png" alt="Imagen del Proyecto BOYD" width="200px" height="200px">
-                <p>Un juego móvil que sigue la historia de Boyd mientras navega en su subconsciente para despertar. 
-                    Desarrollé en Unity las mecánicas y aporté al diseño de niveles con la integración de animaciones 2D. <br>
-                <br> <a href="https://nataliabermudezw.itch.io/boyd" class="btn">Ver Proyecto</a>
+                <img src="img/Segetis.png" alt="Imagen del Proyecto Segetis-SAS" width="50%" height="50%">
+                <p>Se realizó el rediseño del sitio web de Segetis S.A.S., empresa dedicada a la asesoría en áreas regulatorias y servicios profesionales en los sectores agropecuario, salud pública e industria.
+                    
+                    <br><br>El proyecto incluyó un diagnóstico de usabilidad, accesibilidad y claridad visual, implementando mejoras con WordPress y Divi para optimizar la experiencia del usuario y comunicar de forma efectiva la identidad corporativa. <br>
+                <br> <a href="https://www.behance.net/gallery/243410727/Segetis-SAS" target="_blank" class="btn">Ver Proyecto</a>
+                <a href="https://www.segetis.co" target="_blank" class="enlace">Ver Sitio Web</a>
             </p>
-            </div>
-
-            
+            </div>  
         </div>
+
+        <!-- CS AGRIBUSINESS -->
         <div class="proyecto">
-            <h3>AFROKARP</h3>
+            <h3>CS AGRIBUSINESS | Plataforma técnica de consulta y comercio digital</h3>
+            <h4><strong>Cliente:</strong> CS Agribusiness S.A.S.</h4>
+            <div class="study-sectionDs">
+                <div class="study-itemDs">
+                    <img src="Svg/enterprise-design-thinking-02-svgrepo-com.svg" alt=" DesignThinking Logo">
+                  <p>Design Thinking</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/mdi_react.svg" alt="React Logo">
+                  <p>React</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/Figma.svg" alt="Figma Logo">
+                  <p>Figma</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/firebase-svgrepo-com.svg" alt="Firebase">
+                    <p>Firebase</p>
+                </div> 
+            </div>
             <div class="proyecto-contenido">
-                <img src="img/hjfEfU.png" alt="Imagen del Proyecto AFROKARP" width="200px" height="100px">
-                <p>Un juego casual que explora escenarios para unir la naturaleza. Utilicé Unity y desarrolle en C# para crear 
-                    las interacciones de las interfaces y también realicé la integración de animaciones y el ambiente sonoro. <br>
-                    <br> <a href="https://proyectomagickarp.itch.io/magickarp" class="btn">Ver Proyecto</a>
+                <img src="img/csargibusiness.png" alt="Imagen del Proyecto csargibusiness" width="50%" height="50%">
+                <p>Diseño y desarrollo de una plataforma web que centraliza productos agrícolas y documentación técnica, optimizando la consulta por parte de asesores y clientes.
+                    <br><br>Se implementó una arquitectura clara, acceso directo a fichas y hojas de seguridad, y una interfaz responsiva adaptada a contextos rurales. El sistema se construyó con React, Firebase y un UI Kit personalizado, fortaleciendo la presencia digital de CS AGRIBUSINESS. <br>
+                    <br> <a href="https://www.behance.net/gallery/243035633/CS-Agribusiness" target="_blank" class="btn">Ver Proyecto</a>
+                        <a href="https://csagribusiness.com/" target="_blank" class="enlace">Ver Sitio Web</a>
                 </p>
             </div>
-        </div> -->
+        </div> 
+
+        <!-- COMENTAD -->
+        <div class="proyecto">
+            <h3>COMENTAD</h3>
+            <h4><strong>Cliente:</strong> Trabajo Universitario</h4>
+            <div class="study-sectionDs">
+                <div class="study-itemDs">
+                    <img src="Svg/enterprise-design-thinking-02-svgrepo-com.svg" alt=" DesignThinking Logo">
+                  <p>Design Thinking</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/Figma.svg" alt="Figma Logo">
+                  <p>Figma</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/AndroidStudio.svg" alt="Android Studio Logo">
+                  <p>Android Studio</p>
+                </div>
+                <div class="study-itemDs">
+                  <img src="Svg/javascript-svgrepo-com.svg"alt="HTML">
+                  <p>HTML</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/css3-01-svgrepo-com.svg" alt="CSS">
+                    <p>CSS</p>
+                  </div>
+                <div class="study-itemDs">
+                  <img src="Svg/javascript-155-svgrepo-com.svg" alt="JavaScript">
+                  <p>JavaScript</p>
+                </div>
+                <div class="study-itemDs">
+                    <img src="Svg/kotlin-16-svgrepo-com.svg" alt="Kotlin">
+                    <p>Kotlin</p>
+                  </div>
+                <div class="study-itemDs">
+                    <img src="Svg/firebase-svgrepo-com.svg" alt="Firebase">
+                    <p>Firebase</p>
+                </div> 
+            </div>
+            <div class="proyecto-contenido">
+                <img src="img/PortadaComentad.png" alt="COMENTAD_IMAGEN" width="50%" height="50%">
+                <p>Proyecto enfocado en mejorar la comunicación universitaria, basado en entrevistas, encuestas y desk research. Diseñé desde la arquitectura de información hasta los prototipos, 
+                y desarrollé la app móvil y aplicación web. <br>
+                    <br><a href="https://www.behance.net/gallery/209507663/ComenTad" target="_blank" class="btn">Ver Proyecto</a>  
+                </p>
+            </div>
+        </div> 
 
 
 
@@ -182,61 +290,21 @@
     </section>
     <!-- Sección de Estudios de Caso -->
     <section id="estudios-caso" class="estudios-caso">
-        <h2>Estudios de Caso</h2>
+        <h2>Otros Productos</h2>
+
+        <!--UNIVERSO MALOKA-->
         <div class="estudio">
-            <h3>COMENTAD: Diseño y Desarrollo</h3>
-            <img src="img/MacBook Pro 14_ - 2.png" alt="Estudio de caso de COMENTAD" width="500px" height="300px" class="estudio-img">
+            <h3><br> Universo Maloka: Aplicación Móvil</h3>
+            <h4><strong>Cliente:</strong> Museo Maloka</h4>
+            <img src="img/Maloka.png" alt="Estudio de caso de MDHM" height="50%" width="50%" class="estudio-img">
             <p>
-                Proyecto enfocado en mejorar la comunicación universitaria, basado en entrevistas, encuestas y desk research. Diseñé desde la arquitectura de información hasta los prototipos, 
-                y desarrollé la app móvil y aplicación web.<br>
+                Diseño de una experiencia extendida para familias en el museo, combinando un folleto físico y una aplicación móvil con realidad aumentada. La propuesta busca planificar la visita, hacerla lúdica y educativa, y fortalecer la conexión emocional con el museo.
             </p>
             <div class="study-sectionD">
                 <div class="study-itemD">
-                    <img src="Svg/enterprise-design-thinking-02-svgrepo-com.svg" alt=" DesignThinking Logo">
+                    <img src="Svg/enterprise-design-thinking-02-svgrepo-com.svg" alt="DesignThinking Logo">
                   <p>Design Thinking</p>
-                </div>
-                <div class="study-itemD">
-                    <img src="Svg/Figma.svg" alt="Figma Logo">
-                  <p>Figma</p>
-                </div>
-                <div class="study-itemD">
-                    <img src="Svg/AndroidStudio.svg" alt="Android Studio Logo">
-                  <p>Android Studio</p>
-                </div>
-                <div class="study-itemD">
-                  <img src="Svg/javascript-svgrepo-com.svg"alt="HTML">
-                  <p>HTML</p>
-                </div>
-                <div class="study-itemD">
-                    <img src="Svg/css3-01-svgrepo-com.svg" alt="CSS">
-                    <p>CSS</p>
-                  </div>
-                <div class="study-itemD">
-                  <img src="Svg/javascript-155-svgrepo-com.svg" alt="JavaScript">
-                  <p>JavaScript</p>
-                </div>
-                <div class="study-itemD">
-                    <img src="Svg/kotlin-16-svgrepo-com.svg" alt="Kotlin">
-                    <p>Kotlin</p>
-                  </div>
-                <div class="study-itemD">
-                    <img src="Svg/firebase-svgrepo-com.svg" alt="Firebase">
-                    <p>Firebase</p>
-            </div>
-                <!-- Repite este bloque para cada herramienta -->
-            </div>
-            <br>
-            <a href="https://www.behance.net/gallery/209507663/ComenTad" class="btn">Ver Caso</a>
-            <br><br>
-        </div>
-        <div class="estudio">
-            <h3><br>ZONAR: Desarrollo Experiencia de Usuario</h3>
-            <img src="img/image 1.png" alt="Estudio de caso de ZONAR" height="300px" width="500px" class="estudio-img">
-            <p>
-                Creación de una experiencia interactiva accesible para crear secuencias musicales usando cubos sensoriales. La investigación incluyó entrevistas y talleres enfocados en 
-                discapacidad visual.
-            </p>
-            <div class="study-sectionD">
+                </div>                
                 <div class="study-itemD">
                     <img src="Svg/Unity.svg" alt="Unity Logo">
                   <p>Unity</p>
@@ -245,18 +313,22 @@
                     <img src="Svg/Figma.svg" alt="Figma Logo">
                   <p>Figma</p>
                 </div>
-                <div class="study-itemD">
-                    <img src="Svg/Arduino.svg" alt="Arduino Logo">
-                  <p>Arduino</p>
-                </div>
-                <br><br>
+            </div>
+            <br>
+            <a href="https://www.behance.net/gallery/242734973/Universo-Maloka" target="_blank" class="btn">Ver Proyecto</a>
+            <a href="https://grupoland.itch.io/universo-maloka" target="_blank" class="enlace">Aplicativo</a>
+            <br><br>
         </div>
+
+
+        <!--MITOS DEL HERMANO MAYOR-->
         <div class="estudio">
-            <h3><br>Mitos Del Hermano Mayor: Diseño UX y Desarrollo</h3>
-            <img src="img/Burbujas de Agua.png" alt="Estudio de caso de MDHM" height="350px" width="400px" class="estudio-img">
+            <h3><br>Mitos Del Hermano Mayor: Aplicación Móvil</h3>
+            <h4><strong>Cliente:</strong> IDARTES / Proyecto Universitario</h4>
+            <img src="img/MitosDelHermanoMayor.png" alt="Estudio de caso de MDHM" height="50%" width="50%" class="estudio-img">
             <p>
                 Proyecto de hackaton de diseño especulativo en colaboración con IDARTES sobre la comunidad WIWA. Empleamos investigaciones y entrevistas, creando mitos y leyendas basadas 
-                en su cultura. Mi grupo fue el ganador de la hackaton.
+                en su cultura. <strong>Mi grupo fue el ganador de la hackaton.</strong>
             </p>
             <div class="study-sectionD">
                 <div class="study-itemD">
@@ -277,20 +349,97 @@
                 </div>
             </div>
             <br>
-            <a href="https://nataliabermudezw.itch.io/mitos-del-hermano-mayor" class="btn">Ver Caso</a>
+            <a href="https://www.behance.net/gallery/242732057/Mitos-del-Hermano-Mayor" target="_blank" class="btn">Ver Proyecto</a>
+            <a href="https://nataliabermudezw.itch.io/mitos-del-hermano-mayor" target="_blank" class="enlace">Aplicativo</a>
             <br><br>
         </div>
-        <!--<div class="estudio">
-            <h3><br>BEHANCE: Diseño UX/UI</h3>
-            <img src="img/MockLogo (4).png" alt="Behance" height="200px" width="200px" class="estudio-img">
+
+
+        <!--ETHER-->
+        <div class="estudio">
+            <h3>ETHER: VideoJuego</h3>
+            <img src="img/Ehter.png" alt="Estudio de caso de COMENTAD" width="50%" height="50%" class="estudio-img">
             <p>
-                Portfolio de proyectos UX/UI que destaca arquitectura de información, mapas de navegación, Style Tiles, sistemas de diseño, wireframes, y prototipos interactivos. Cada proyecto 
-                resalta mi creatividad enfocada en accesibilidad y diseño funcional.
-                <br> <br>
-                
-                <a href="https://www.behance.net/nataliabermude3" class="btn">Ver Proyecto</a>
+                Un juego de aventuras que explora mundos dimensionales para unir la naturaleza. Utilicé Unity y 
+                    fui la encargada de la creación de las interacciones y mecánicas del videojuego 3D. 
+                    También realicé la integración de animaciones y el ambiente sonoro.<br>
             </p>
-        </div>-->
+            <div class="study-sectionD">
+                <div class="study-itemD">
+                    <img src="Svg/enterprise-design-thinking-02-svgrepo-com.svg" alt=" DesignThinking Logo">
+                  <p>Design Thinking</p>
+                </div>
+                <div class="study-itemD">
+                    <img src="Svg/Figma.svg" alt="Figma Logo">
+                  <p>Figma</p>
+                </div>
+                <div class="study-itemD">
+                    <img src="Svg/Unity.svg" alt="Unity Logo">
+                  <p>Unity</p>
+                </div>
+
+                <div class="study-itemD">
+                    <img src="Svg/file-icons_blender.svg" alt="Unity Logo">
+                  <p>Blender</p>
+                </div>
+                <!-- Repite este bloque para cada herramienta -->
+            </div>
+            <br>
+            <a href="https://www.behance.net/gallery/209173459/Ether-%28SPANISH%29" target="_blank" class="btn">Ver Proyecto</a>
+            <a href="https://nataliabermudezw.itch.io/ether" target="_blank" class="enlace">Videojuego</a>
+            <br><br>
+        </div>
+
+        <!--BOYD-->
+        <div class="estudio">
+            <h3>BOYD: Juego móvil</h3>
+            <img src="img/boyd.png" alt="Estudio de caso de COMENTAD" width="200px" height="350px" class="estudio-img">
+            <p>
+                Un juego móvil que sigue la historia de Boyd mientras navega en su subconsciente para despertar. 
+                    Desarrollé en Unity las mecánicas y aporté al diseño de niveles con la integración de animaciones 2D. <br>
+            </p>
+            <div class="study-sectionD">
+                <div class="study-itemD">
+                    <img src="Svg/Unity.svg" alt="Unity Logo">
+                  <p>Unity</p>
+                </div>
+                <div class="study-itemD">
+                    <img src="Svg/Figma.svg" alt="Figma Logo">
+                  <p>Figma</p>
+                </div>
+                <!-- Repite este bloque para cada herramienta -->
+            </div>
+            <br>
+            <a href="https://nataliabermudezw.itch.io/boyd" target="_blank" class="enlace">VideoJuego</a>
+            <br><br>
+        </div>
+
+        <!--ZONAR-->
+        <div class="estudio">
+            <h3><br>ZONAR: Desarrollo Experiencia de Usuario</h3>
+            <img src="img/image 1.png" alt="Estudio de caso de ZONAR" height="50%" width="50%" class="estudio-img">
+            <p>
+                Creación de una experiencia interactiva accesible para crear secuencias musicales usando cubos sensoriales. La investigación incluyó entrevistas y talleres enfocados en 
+                discapacidad visual.
+            </p>
+            <div class="study-sectionD">
+                <div class="study-itemD">
+                    <img src="Svg/Unity.svg" alt="Unity Logo">
+                  <p>Unity</p>
+                </div>
+                <div class="study-itemD">
+                    <img src="Svg/Figma.svg" alt="Figma Logo">
+                  <p>Figma</p>
+                </div>
+                <div class="study-itemD">
+                    <img src="Svg/Arduino.svg" alt="Arduino Logo">
+                  <p>Arduino</p>
+                </div>
+                <br><br>
+            </div>
+        </div>
+
+
     </section>
 
 
@@ -342,20 +491,26 @@
           <h2>Habilidades y Herramientas</h2>
           <ul class="habilidades-cuadro">
               <ul class="habilidades-cuadro-titulo">Lenguajes
+                <li>React.js</li>
+                <li>JavaScript </li>
+                <li>HTML5</li>
+                  <li>CSS3</li>
                   <li>C#</li>
                   <li>C++ </li>
-                  <li>JavaScript </li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Kotlin</li>    
+                  <li>Kotlin</li>   
+                   
               </ul>
               <img class="linea-imagen" src="Line 9.png">
               <ul class="habilidades-cuadro-titulo">Herramientas
+                <li>WordPress</li>
+                <li>Git Hub</li>
                   <li>Unity</li>
-                  <li>Unreal</li>
                   <li>Android Studio</li>
                   <li>Arduino</li>
-                  <li>Git Hub</li>
+                  <li>Visual Studio Code</li>
+                  <li>Azure DevOps</li>
+                <li>Jira</li>
+
               </ul>
               <img class="linea-imagen" src="Line 9.png">
               <ul class="habilidades-cuadro-titulo">Diseño UX/UI
@@ -364,7 +519,9 @@
                   <li>Illustrator</li>
                   <li>Photoshop</li>
                   <li>Metodología Agile</li>
-                  <li>Jira</li>
+                  <li>Diseño Responsivo</li>
+                  <li>Atomic Design</li>
+                  <li>Diseño Visual</li>
               </ul>
           </ul>
     </section>
@@ -373,32 +530,37 @@
     <!-- Sección de Contacto -->
     <section id="contacto" class="contacto">
         <h2>Contacto</h2>
-        <form action="https://formspree.io/f/mldeerkw" method="POST">
+        <!--<form action="https://formspree.io/f/mldeerkw" method="POST">
             <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
 
             <textarea id="mensaje" name="mensaje" placeholder="Mensaje:" required></textarea>
 
-            <!--<button type="submit" >Enviar</button>-->
+            <button type="submit" >Enviar</button>
             <button type="submit" class="btn">Enviar</button>
-        </form>
+        </form>-->
         
         <div class="redes-sociales">
-            <h3>Sígueme en mis redes sociales:</h3>
+            <!--<h3>Sígueme en mis redes sociales:</h3>-->
             <ul>
+                <li><a href="https://www.behance.net/nataliabermude3" target="_blank"> <img src="Svg/Behance.svg"  alt="Behance Logo" width="50px" height="50px" class="colored-svg"></a></li>
                 <li><a href="https://nataliabermudezw.itch.io" target="_blank"> <img src="Svg/itch-io-icon-2048x2048-6n1nulpw.svg" alt="Itch.io Logo" width="50px" height="50px" class="colored-svg"></a></li>
                 <li><a href="https://www.linkedin.com/in/natalia-bermúdez-wallis-5b73aa26b/"target="_blank"> <img src="Svg/linkedin.svg" alt="Linkedin Logo" width="50px" height="50px" class="colored-svg"></a></li>
-                <li><a href="https://www.behance.net/nataliabermude3" target="_blank"> <img src="Svg/Behance.svg"  alt="Behance Logo" width="50px" height="50px" class="colored-svg"></a></li>
+                <li><a href="https://wa.me/573194532089" target="_blank"> <img src="Svg/uim_whatsapp.svg"  alt="Whatsapp Logo" width="50px" height="50px" class="colored-svg"></a></li>
+                <li><a href="mailto:natanataber@gmail.com" target="_blank"> <img src="Svg/ic_baseline-email.svg"  alt="Email Logo" width="50px" height="50px" class="colored-svg"></a></li>
             </ul>
         </div>
     </section>
 
 
     <div class="section-indicator">
-        <span data-section="inicio" onclick="scrollToSection('inicio')"></span>
+        <span data-section="sobre-mi" onclick="scrollToSection('sobre-mi')"></span>
         <span data-section="proyectos" onclick="scrollToSection('proyectos')"></span>
         <span data-section="estudios-caso" onclick="scrollToSection('estudios-caso')"></span>
         <span data-section="habilidades" onclick="scrollToSection('habilidades')"></span>
     </div>
+
+    <a href="#contacto" class="fixed-button">Contáctame</a>
+    <a href="english.html" class="fixed-button-en"><img src="Svg/icon-park-solid_english.svg" alt="English Logo" width="50px" height="50px" class="colored-svg"></a>
 
     <!-- Pie de página -->
     <footer>

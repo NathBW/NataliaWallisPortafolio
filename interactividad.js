@@ -3,6 +3,7 @@ const nextBtn = document.querySelector('.next-btn');
 const skillItems = document.querySelectorAll('.skill-item');
 let currentIndex = 0;
 
+
 function showSkill(index) {
   const totalSkills = skillItems.length;
   const carouselWidth = document.querySelector('.carousel-container').offsetWidth;
@@ -41,3 +42,5 @@ function navigateAndDownload() {
     // Primero redirige a LinkedIn
     window.location.href = 'https://www.linkedin.com/in/natalia-berm%C3%BAdez-wallis-5b73aa26b/';
 }
+
+
